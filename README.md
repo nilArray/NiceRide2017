@@ -33,3 +33,18 @@ Acknowledgements:
 * https://geoffboeing.com/2014/08/clustering-to-reduce-spatial-data-set-size/
 * https://towardsdatascience.com/random-forest-in-python-24d0893d51c0
 * https://stackoverflow.com/questions/19412462/getting-distance-between-two-points-based-on-latitude-longitude#19412565
+
+Summary:
+There weren't many features in this dataset, and yet, some interesting questions can be asked and results found. I asked three questions of this dataset, let's summarize the results:
+
+* Do station locations map to established neighborhoods?
+
+Yes! At least at a first glance, some clustering algorithms come up with clusters that align very closely with actual neighboorhoods. This could be because stations and neighborhoods are based on geographic boundaries. It could also be that neighboorhoods and stations follow patterns of density. Results here could be improved if hard boundaries, like a river, could be fed into the clustering algorithm. This would prevent the few stations that were incorrectly clustered.
+
+* Can the total number of trips be predicted based on weather data to 80% accuracy?
+
+No! At least not with the data provided. The regression I used in addition to several engineered features could only get to about 60% accuracy. Perhaps more data is required.
+
+* Can the speed of a trip be calculated?
+
+Yes! Well, sort of! Without knowing the actual route someone took, my 'best guess' is to calculate the distance between two stations as a straight line. While not completely accurate, it does provide a decent estimation and should be internally consistent enough for start-end station pairs. 
