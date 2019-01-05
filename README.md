@@ -25,6 +25,7 @@ Libraries used:
 * `geopy` : Used to calculate the distance between two gps coordinates
 * `IPython.display` : Used to manipulate the jupyter notebook output
 * `sklearn` : Machine learning, clustering, regressions and scaling
+* `matplotlib.pyplot`: A package for building plots from dataframes
 
 Acknowledgements:
 * https://stackoverflow.com/questions/27934885/how-to-hide-code-from-cells-in-ipython-notebook-visualized-with-nbviewer
